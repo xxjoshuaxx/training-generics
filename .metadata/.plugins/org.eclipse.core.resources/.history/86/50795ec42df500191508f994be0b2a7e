@@ -1,0 +1,22 @@
+package com.generics;
+
+public class NonGenericExample01Demo {
+	public static void main(String args[]) { 
+	    NonGenericExample integerOb;  
+	    integerOb = 99;
+	    integerOb.showType(); 
+
+	    
+	    
+	    int v = integerOb.getobj(); //No Cast is required
+	    System.out.println("value: " + v); 	 
+	    System.out.println(); 
+	 
+	    GenericExample01<String> strOb = new GenericExample01<String>("Generics Test"); 
+	    strOb.showType(); 
+	    String str = strOb.getobj(); 
+	    System.out.println("value: " + str);
+	    
+	    str = (String)integerOb;
+	  } 
+}

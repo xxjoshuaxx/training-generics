@@ -1,0 +1,24 @@
+package com.generics;
+
+public class GenericExample01Demo {
+	public static void main(String args[]) { 
+	    
+	    GenericExample01<Integer> integerOb;  
+	    integerOb = new GenericExample01<Integer>(88); 
+	    integerOb.showType(); 
+
+	    
+	    
+	    int v = integerOb.getobj(); //No Cast is required
+	    System.out.println("value: " + v); 	 
+	    System.out.println(); 
+	 
+	    GenericExample01<String> strOb = new GenericExample01<String>("Generics Test"); 
+	    strOb.showType(); 
+	    String str = strOb.getobj(); 
+	    System.out.println("value: " + str);
+	    
+	    //integerOb = strOb; //Compile Time Error. Enhancing Type Safety
+	    
+	  } 
+}

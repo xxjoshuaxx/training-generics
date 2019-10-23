@@ -1,0 +1,12 @@
+package com.generics;
+
+public class GenericExample01Demo {
+	public static void main(String args[]) { 
+	    GenericExampleTwo<Integer, String> Ob;  
+	    Ob = new GenericExampleTwo<Integer,String>(88,"AAA"); 
+	    Ob.showType(); 
+
+	    
+	    
+	  } 
+}

@@ -1,0 +1,26 @@
+package com.generics;
+
+class GenericExampleTwo<T, V> { 
+	  T obj1; // declare an object of type T 
+	   V obj2;
+	  // Pass the constructor a reference to  
+	  // an object of type T. 
+	  GenericExampleTwo(T o1, V o2) { 
+	    obj1 = o1;
+	    obj2 = o2;
+	  } 
+	 
+	  // Return object. 
+	  T getobj2() { 
+	    return obj2; 
+	  } 
+	 
+	  // Show type of T. 
+	  void showType() { 
+	    System.out.println("Type of T is " + 
+	    		obj1.getClass().getName()); 
+	    System.out.println("Type of V is " + 
+	    		obj1.getClass().getName());
+	  } 
+	} 
+

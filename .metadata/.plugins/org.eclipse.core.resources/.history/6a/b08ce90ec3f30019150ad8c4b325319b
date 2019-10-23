@@ -1,0 +1,10 @@
+package com.generics;
+
+public class ObjectDataTypeExample {
+	
+	public static void main(String args[]){
+		Object a = "String Now";
+		System.out.println(a);
+	}
+
+}
